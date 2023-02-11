@@ -1,6 +1,7 @@
 package collection;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ArrayListMethods2 {
     public static void main(String[] args) {
@@ -16,13 +17,14 @@ public class ArrayListMethods2 {
         list.add(st3);
         list.add(st4);
         list.add(st5);
-        System.out.println(list);
-
         Student st6 = new Student("Anna", 'F', 21, 4, 4.3);
-        list.add(st6);
 
-        list.remove(st6);
         System.out.println(list);
+
+//        list.remove(st6);
+
+        int index = list.indexOf(st6);
+        System.out.println(index);
     }
 }
 
@@ -91,4 +93,17 @@ class Student {
                 ", avgGrade=" + avgGrade +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return sex == student.sex &&
+                age == student.age &&
+                course == student.course &&
+                Double.compare(student.avgGrade, avgGrade) == 0 &&
+                Objects.equals(name, student.name);
+    }
+
 }
