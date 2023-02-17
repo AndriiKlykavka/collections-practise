@@ -26,18 +26,18 @@ public class binarySearch {
         Collections.reverse(arrayList);
         System.out.println(arrayList);
         Collections.shuffle(arrayList);
+//        int index1 = Collections.binarySearch(arrayList, 100);
         System.out.println(arrayList);
 //        System.out.println(arrayList);
-//        int index1 = Collections.binarySearch(arrayList, 100);
 //        System.out.println(index1);
-
-//        Employee emp1 = new Employee(100, "Miracle", 12345);
-//        Employee emp2 = new Employee(15, "Solar", 6542);
-//        Employee emp3 = new Employee(123, "Dark", 8542);
-//        Employee emp4 = new Employee(15, "Serrar", 5678);
-//        Employee emp5 = new Employee(182, "TyTy", 125);
-//        Employee emp6 = new Employee(15, "Innovation", 9874);
-//        Employee emp7 = new Employee(250, "Maru", 1579);
+        Employee emp1 = new Employee(100, "Miracle", 12345);
+        Employee emp2 = new Employee(15, "Solar", 6542);
+        Employee emp3 = new Employee(123, "Dark", 8542);
+        Employee emp4 = new Employee(15, "Serrar", 5678);
+        Employee emp5 = new Employee(182, "TyTy", 125);
+        Employee emp6 = new Employee(15, "Innovation", 9874);
+        Employee emp7 = new Employee(250, "Maru", 1579);
+        
 //
 //        List<Employee> list = new ArrayList<>();
 //
